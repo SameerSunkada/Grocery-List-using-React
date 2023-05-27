@@ -31,7 +31,7 @@ body {
 
 header {
   width: 100%;
-  padding: 0 0.25em;
+  padding: 0 1rem;
   background-color: #333;
   color: aliceblue;
   display: flex;
@@ -51,7 +51,7 @@ main {
 
 footer {
   width: 100%;
-  padding: 0.25em;
+  padding: 1em;
   background-color: #333;
   color: aliceblue;
   display: grid;
@@ -98,7 +98,7 @@ ul li::before {
 }
 
 .item > label {
-  font-size: 0.75rem;
+  font-size: 1rem;
   flex-grow: 1;
 }
 
@@ -106,8 +106,10 @@ ul li::before {
   width: 48px;
   min-width: 48px;
   height: 36px;
+  width: 30px;
+  height: 30px;
   font-size: 1rem;
-  color: steelblue;
+  color: black;
   cursor: pointer;
 }
 
