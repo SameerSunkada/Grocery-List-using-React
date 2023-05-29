@@ -31,11 +31,11 @@ body {
 
 header {
   width: 100%;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   background-color: #333;
   color: aliceblue;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -138,6 +138,7 @@ ul li::before {
   max-width: calc(100% - 50px);
   min-height: 48px;
   font-size: 1rem;
+  padding: 0.25rem;
 }
 
 button{
