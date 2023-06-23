@@ -31,7 +31,7 @@ function App() {
       }
     }
 
-    setTimeout(() => fetchItems(), 2000);
+    fetchItems();
 
   }, [])
 
