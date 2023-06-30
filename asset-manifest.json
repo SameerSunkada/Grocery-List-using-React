@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SameerSunkada/Grocery-List-using-React/static/css/main.b220b7b2.css",
+    "main.js": "/SameerSunkada/Grocery-List-using-React/static/js/main.cd6d4634.js",
+    "index.html": "/SameerSunkada/Grocery-List-using-React/index.html",
+    "main.b220b7b2.css.map": "/SameerSunkada/Grocery-List-using-React/static/css/main.b220b7b2.css.map",
+    "main.cd6d4634.js.map": "/SameerSunkada/Grocery-List-using-React/static/js/main.cd6d4634.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b220b7b2.css",
+    "static/js/main.cd6d4634.js"
+  ]
+}
