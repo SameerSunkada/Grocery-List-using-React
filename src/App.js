@@ -12,6 +12,8 @@ function App() {
 
   const [search, setSearch] = useState('');
 
+  const [checkedItems, setCheckedItems] = useState([]);
+
   const setAndSaveItems = (newItemsList) =>{
     setItems(newItemsList);
     localStorage.setItem('shoppingList', JSON.stringify(newItemsList));
@@ -26,7 +28,12 @@ function App() {
       checked: false,
       item : newItem
     }
-    const updatedItems = [...items,item];
+    const updatedItems = [...items];
+    let count = 0;
+    for(let i = 0; i<items.length; ++i){
+      if(items[i].checked) count++;
+    }
+    updatedItems.splice(items.length-count,0,item)
     setItems(updatedItems)
     setNewItem('');
     setAndSaveItems(updatedItems);
@@ -35,7 +42,16 @@ function App() {
     const newListItems = items.filter((item) => id === item.id);
     newListItems[0].checked? newListItems[0].checked = false : newListItems[0].checked = true;
     const listItems = items.filter((item) => id !== item.id);
-    listItems.push(newListItems[0]);
+    if(!newListItems[0].checked){
+      let count = 0;
+      for(let i = 0; i<items.length; ++i){
+        if(items[i].checked) count++;
+      }
+      listItems.splice(items.length-count-1,0,newListItems[0]);
+    }
+    else{
+      listItems.push(newListItems[0]);
+    }
     setAndSaveItems(listItems);
   }
 
