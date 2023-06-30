@@ -1,7 +1,7 @@
 {
   "name": "practice",
   "version": "0.1.0",
-  "homepage": "https://github.com/SameerSunkada/Grocery-List-using-React",
+  "homepage": "https://sameersunkada.github.io/Grocery-List-using-React/",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
